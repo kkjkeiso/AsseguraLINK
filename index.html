@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AsseguraLINK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <div class="hero">
+        <p class="eyebrow">Análise de endereços URL</p>
+        <h1>AsseguraLINK</h1>
+        <p class="lead">
+          Informe um endereço URL. A análise combina critérios técnicos locais com
+          consultas a bases públicas de phishing e malware.
+        </p>
+
+        <form id="check-form" class="card" autocomplete="off">
+          <label for="url-input">Endereço URL</label>
+          <input
+            id="url-input"
+            name="url"
+            type="text"
+            inputmode="url"
+            placeholder="https://exemplo.com"
+            required
+          />
+          <button type="submit" id="submit-btn">Analisar</button>
+        </form>
+      </div>
+
+      <section id="result" class="result" hidden>
+        <h2 id="result-title"></h2>
+        <p id="result-summary" class="result-summary"></p>
+        <p id="result-url" class="checked-url"></p>
+        <ul id="reasons"></ul>
+      </section>
+
+      <section id="api-sources" class="api-sources" hidden>
+        <h3 class="sources-title">Fontes consultadas</h3>
+        <div id="api-cards" class="api-cards"></div>
+      </section>
+    </main>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

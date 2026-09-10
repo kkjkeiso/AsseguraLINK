@@ -1,0 +1,13 @@
+{
+  "name": "asseguralink-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "API de verificação de links do AsseguraLINK",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
